@@ -11,3 +11,21 @@
 6. Data types in Go
     * predefined data types: int, uint, float, rune, byte, boolean, string
     * composite: array, slice, map, and struct
+
+## Operators
+1. Arithmetic
+2. Logical
+3. Assignment
+4. Comparison
+
+## Program Flow
+1. If, else If, else..
+2. for, use for loop as while
+3. goto, break, continue, labels
+4. switch cases
+
+## Arrays
+* declarations, operations, keyed elements
+
+## Slices
+* declarations, basic operations, backing array, comparing slices, append(), copy()
