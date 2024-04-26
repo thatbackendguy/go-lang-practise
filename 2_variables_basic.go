@@ -28,7 +28,7 @@ var v string   //value
 var err error  //error value
 var done bool  //bool, has been done?
 
-// use mixedCase a.k.a camelCase instead of snake_case (variables and  functions)
+// use mixedCase a.k.a camelCase instead of snake_case (variables and  Functions)
 var maxValue = 100  // recommended (camelCase)
 var max_value = 100 // not recommended (snake_case)
 
@@ -64,8 +64,9 @@ func main() {
 
 	fmt.Println(s)
 
-	// 16. MULTIPLE DECLARATIONS
+	// Vid-16. MULTIPLE DECLARATIONS
 	car, cost := "Audi", 100000
+
 	car, year := "BMW", 2024
 
 	fmt.Println(car, cost, year)
@@ -112,9 +113,12 @@ func main() {
 		const     fallthrough  if      range      type
 		continue  for          import  return     var
 	*/
+
 	// use fewer letters, don’t be too verbose especially in smaller scopes
 	var packetsReceived int // NOT OK, too verbose
-	var n int               // OK
+
+	var n int // OK
+
 	_, _ = packetsReceived, n
 
 	// an uppercase first letter has special significance to go (it will be exported in other packages)

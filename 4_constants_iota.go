@@ -1,12 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
+	// Constant expressions perform arithmetic with arbitrary precision.
 	// To declare a constant and give it a name, we use the const keyword
 	// Constants need to be initialized when declared
 	const days int = 7 // typed constant
-	const pi = 3.14    // untyped constant
+
+	const pi = 3.14 // untyped constant
 
 	// There are ONLY boolean constants, rune constants, integer constants,
 	// floating-point constants, complex constants, and string constants.
@@ -29,10 +34,11 @@ func main() {
 
 	// 1. You cannot change a constant
 	const temp int = 100
+
 	// temp = 50 //compile-time error
 
 	// 2. You cannot initiate a constant at runtime (constants belong to compile-time)
-	// const power = math.Pow(2, 3) //error, functions calls belong to runtime
+	// const power = math.Pow(2, 3) //error, Functions calls belong to runtime
 
 	// 3. You cannot use a variable to initialize a constant
 	t := 5
@@ -52,12 +58,14 @@ func main() {
 
 	// UNTYPED CONSTANTS
 	const x = 5
+
 	const y float64 = 1.1
 
 	var v1 int = 5
+
 	var v2 float64 = 1.1
 
-	fmt.Println(x * y)
+	fmt.Println(x * y) //gets its type and value form the previous constant. It's 500
 	// => 5.5, No Error because x is untyped and gets its type when its used first time (float64).
 
 	// fmt.Println(v1 * v2)
@@ -88,4 +96,15 @@ func main() {
 		c22            // -> 2
 		c33            // -> 4
 	)
+
+	const (
+		jun  = iota + 6 // -> 6
+		july            // -> 7
+		aug             // -> 8
+	)
+
+	//const xyx int = 12 : ERROR:Cannot use 'xyx' (type int) as the type float64, when the variable is typed
+	const xyx = 12 // OK: untyped in is valid for conversion
+
+	fmt.Printf("type of c11: %T\n", math.Sin(xyx))
 }
