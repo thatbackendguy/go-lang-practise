@@ -28,7 +28,7 @@ var v string   //value
 var err error  //error value
 var done bool  //bool, has been done?
 
-// use mixedCase a.k.a camelCase instead of snake_case (variables and  Functions)
+// use mixedCase a.k.a camelCase instead of snake_case (variables and  8Functions)
 var maxValue = 100  // recommended (camelCase)
 var max_value = 100 // not recommended (snake_case)
 

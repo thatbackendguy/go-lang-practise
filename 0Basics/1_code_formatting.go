@@ -1,6 +1,6 @@
 package main
 
-// Package fmt implements formatted I/O with Functions analogous to C's printf and scanf.
+// Package fmt implements formatted I/O with 8Functions analogous to C's printf and scanf.
 // It's used mainly to print out to stdout
 import "fmt"
 

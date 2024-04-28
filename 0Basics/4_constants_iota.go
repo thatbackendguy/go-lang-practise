@@ -38,7 +38,7 @@ func main() {
 	// temp = 50 //compile-time error
 
 	// 2. You cannot initiate a constant at runtime (constants belong to compile-time)
-	// const power = math.Pow(2, 3) //error, Functions calls belong to runtime
+	// const power = math.Pow(2, 3) //error, 8Functions calls belong to runtime
 
 	// 3. You cannot use a variable to initialize a constant
 	t := 5
