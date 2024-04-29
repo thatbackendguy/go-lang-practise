@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -44,4 +46,10 @@ func main() {
 	s1 = append(s1[:4], 200) // overwrites the last element
 
 	fmt.Println(s1) // -> [1 2 3 4 200]
+
+	fmt.Printf("%#v-------%p-------%v-------%v\n", s1, s1, s1, cap(s1))
+
+	s1 = append(s1, s1...)
+
+	fmt.Printf("%#v-------%p-------%v-------%v\n", s1, s1, s1, cap(s1))
 }
