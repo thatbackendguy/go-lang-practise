@@ -1,11 +1,10 @@
 package main
 
-// Package fmt implements formatted I/O with 8Functions analogous to C's printf and scanf.
+// Package fmt implements formatted I/O with functions analogous to C's printf and scanf.
 // It's used mainly to print out to stdout
 import "fmt"
 
 func main() {
-
 	// fmt.Println() writes to standard output.
 	// spaces are always added between operands and a newline is appended.
 	fmt.Println("Hello Go World!") // => Hello Go World!

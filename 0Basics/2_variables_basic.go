@@ -28,7 +28,7 @@ var v string   //value
 var err error  //error value
 var done bool  //bool, has been done?
 
-// use mixedCase a.k.a camelCase instead of snake_case (variables and  8Functions)
+// use mixedCase a.k.a camelCase instead of snake_case (variables and  functions)
 var maxValue = 100  // recommended (camelCase)
 var max_value = 100 // not recommended (snake_case)
 
@@ -106,13 +106,16 @@ func main() {
 	fmt.Println(fullName)
 
 	/*
-		KEYWORDS: cannot be used as identifier
+		KEYWORDS (25): cannot be used as identifier
 		break     default      func    interface  select
 		case      defer        go      map        struct
 		chan      else         goto    package    switch
 		const     fallthrough  if      range      type
 		continue  for          import  return     var
 	*/
+	const a1 = 5.0
+	const name1 = 2.3 + 5
+	_ = name
 
 	// use fewer letters, don’t be too verbose especially in smaller scopes
 	var packetsReceived int // NOT OK, too verbose
